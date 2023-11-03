@@ -1,0 +1,78 @@
+.calendar-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.calendar {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 100px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 55, 149);
+}
+
+.date {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.month {
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.weekdays {
+  width: 95%;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+}
+
+.days {
+  font-weight: 500;
+  height: 250px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: rgb(249, 249, 249);
+}
+
+.days div {
+  border-radius: 10px;
+  display: flex;
+  width: 14.285%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover {
+  background-color: rgb(255, 140, 194);
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.current-date {
+  color: white;
+  background-color: rgb(255, 55, 149);
+}

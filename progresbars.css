@@ -1,0 +1,47 @@
+.progres-bar-con {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.progres-bar {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+      closest-side,
+      rgb(255, 255, 255) 85%,
+      transparent 80% 100%
+    ),
+    conic-gradient(rgb(255, 55, 149) 100%, pink 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hard-progres-bar,
+.mid-progres-bar,
+.low-progres-bar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hard-progres-bar {
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
+    conic-gradient(rgb(220, 50, 50) 100%, rgb(220, 120, 120) 0);
+}
+
+.mid-progres-bar {
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
+    conic-gradient(rgb(100, 203, 255) 100%, rgb(167, 226, 255) 0);
+}
+
+.low-progres-bar {
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
+    conic-gradient(rgb(125, 238, 190) 100%, rgb(180, 223, 205) 0);
+}

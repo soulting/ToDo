@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calendar.css" />
+    <link rel="stylesheet" href="progresbars.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="left-element">
+        <div class="first-top-left">
+          <p class="task-text">Tasks</p>
+          <div class="control-pad">
+            <button class="addTask">Add Task</button>
+            <p class="filterTask">Sort:</p>
+            <select class="sort-tasks">
+              <option value="1">by oldest</option>
+              <option value="2">by newest</option>
+              <option value="3">by lowest difficulty</option>
+              <option value="4">by highest difficulty</option>
+            </select>
+          </div>
+        </div>
+        <ol class="list">
+          <li>
+            <div class="task-con" style="display: none">
+              <div class="dif-strap"></div>
+              <div class="info-task">
+                <div class="first-task-con">
+                  <p class="task-title">Title</p>
+                  <button class="edit-task-button"></button>
+                </div>
+                <div class="second-task-con">
+                  <p class="task-description">Task description</p>
+                </div>
+                <div class="third-task-con">
+                  <button class="view-button">View Task</button>
+                  <button class="complete-button">Completed</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="right-element">
+        <div class="progres-bar-con">
+          <div class="progres-bar">100%</div>
+          <div class="hard-progres-bar">100%</div>
+          <div class="mid-progres-bar">100%</div>
+          <div class="low-progres-bar">100%</div>
+        </div>
+        <div class="calendar-wrapper">
+          <div class="calendar">
+            <i class="fas fa-angle-left"></i>
+            <div class="date">
+              <p class="month">Oct</p>
+              <p class="fulldate">Mon 30, Oct, 2023</p>
+            </div>
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wen</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days">
+            <div class="prev-date">25</div>
+            <div class="prev-date">26</div>
+            <div class="prev-date">27</div>
+            <div class="prev-date">28</div>
+            <div class="prev-date">29</div>
+            <div class="prev-date">30</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div class="current-date">31</div>
+            <div class="next-date">1</div>
+            <div class="next-date">2</div>
+            <div class="next-date">3</div>
+            <div class="next-date">4</div>
+            <div class="next-date">5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="new-task-container">
+        <div class="new-task-header">
+          <p>New Task</p>
+          <button class="close-new-task">&times;</button>
+        </div>
+        <div class="new-task-info">
+          <input
+            class="title-input"
+            type="text"
+            placeholder="Enter the title"
+          />
+          <p>difficulty:</p>
+          <select class="diff-selector">
+            <option value="1">low</option>
+            <option value="2">medium</option>
+            <option value="3">high</option>
+          </select>
+        </div>
+        <textarea
+          class="text-input"
+          name=""
+          id="text-area"
+          cols="30"
+          rows="10"
+          placeholder="Enter your task descryption"
+        ></textarea>
+        <button class="new-task-add-button">Add Task</button>
+      </div>
+    </div>
+    <div class="view-overlay">
+      <div class="view-container">
+        <div class="top-part">
+          <p class="view-title">Title</p>
+          <button class="close-view">&times;</button>
+        </div>
+        <p class="view-descryption">descryption</p>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+  <script src="calendar.js"></script>
+</html>
